@@ -15,5 +15,9 @@
     Store your answer in array c
     Print your final answer
     */
+       for (int i = 0; i < 5; i++) {
+         c[i] = a[i] + b[i]; // Compute the sum of corresponding elements
+         printf("c[%d] = %f\n", i, c[i]); // Print the result
+      }
     return 0;
  }

@@ -15,5 +15,9 @@
     Store your answer in d
     print your final answer
     */
+   for (int i = 0; i < 5; i++) {
+      d += a[i] * b[i]; // Compute the product of corresponding elements and accumulate
+    }
+    printf("Dot product = %f\n", d); // Print the final dot product
     return 0;
  }
