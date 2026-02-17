@@ -4,6 +4,7 @@
  */
 
  #include <stdio.h>
+ #include <stdlib.h>
 
  int main( void ) {
     int n = 5;
@@ -22,6 +23,16 @@
     Store your answer in d
     print your final answer
     */
+   for (int k = 0; k < n; k++) {
+      a[k] = (float)k;  // initialise vector a
+      b[k] = (float)(k + 1);  // initialise vector b
+   }
+   float sum = 0.0;
+   for (int k = 0; k < n; k++) {
+      d[k] = a[k] * b[k];
+      sum += d[k];
+   }
+   printf("Dot product = %f\n", sum);
 
     // explicit deallocation of heap memory before exit */
     free(a);
