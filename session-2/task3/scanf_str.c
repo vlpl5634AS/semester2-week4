@@ -6,7 +6,7 @@ int main( void ) {
 
     int count = scanf("%s",input);
     //int count = scanf("%9s",input);
-
+    
     printf("Read %d value\n",count);
     printf("Values: %s\n",input);
 
